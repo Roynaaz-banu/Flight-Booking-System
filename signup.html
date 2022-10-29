@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/Applications/XAMPP/xamppfiles/htdocs/signupstyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="nav nav_top">
+	    <div class="logo">
+		    <a href="signup.html"><img src="/Applications/XAMPP/xamppfiles/htdocs/DBS-Logo-1968.jpg" width="150"></a>
+            <h3> Flight Booking System  </h3>
+		</div>
+		<div class="nav_side">
+		    <a href="signup.html">Home</a>
+		    <a href="aboutus.html">About Us</a>
+
+			<a href="contactus.html">Contact Us</a>
+			<a href="signup.html">Login/register</a>
+		</div>
+	</nav>
+    <div class="register-form">
+      <form>
+        <div id="container">
+          <div id="tabs">
+            <!-- <a id="lt" class="tabs" onclick="loginTabFun()">Log in</a> -->
+            <a id="rt" class="tabs">Register</a>
+  
+            <div id="clear"></div>
+          </div>
+  
+          <div id="cont">
+            <!-- <div id="login" class="comm">
+              <h3>Sign in</h3>
+              <input id="se" type="email" name="email" placeholder="Email" required />
+              <input id="sp" type="password" placeholder="Password" required />
+              <button class="submit" type="submit" onclick="login()">Submit</button>
+              <p onclick="forTabFun()">Forget Password?</p>
+            </div> -->
+          </div>
+
+            <div>
+              <h3>Register</h3>
+              <input id="fnm" type="text" placeholder="First Name" required />
+              <input id="lnm" type="text" placeholder="Last Name" required />
+              <input id="gen" type="text" placeholder="Gender" required />
+              <input id="pn" name="phone" type="text" placeholder="Number" size="10" required />
+              <input id="re" name="email" type="email" placeholder="Email" required />
+              <input id="rre" name="email" type="email" placeholder="Re Type Email" required />
+              <input id="ct" name="city" type="text" placeholder="City" required />
+              <input id="rp" type="password" placeholder="Password" required />
+              <input id="rrp" type="password" placeholder="Re write Password" required />
+              <a href="anotherpage.html">
+                <button class="submit" type="submit" onclick="flights.html">Submit</button>
+              </a>
+              
+  
+  
+  
+            </div>
+            <div id="forgot" class="comm">
+              <h3>Forgot Password</h3>
+              <div>
+                <input id="fe" name="email" type="email" placeholder="Email" required />
+                <button class="suContactus.htmlbmit" type="submit" onclick="flights.html">Submit</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </body>
+  <script>
+    var emailArray=[];
+       var passwordArray=[];
+   function register(){
+           event.preventDefault();
+           var fname = document.getElementById("fnm").value;
+           var lname = document.getElementById("lnm").value;
+           var address = document.getElementById("add").value;
+           var email = document.getElementById("re").value;
+           var dob = document.getElementById("dob").value;
+           var password = document.getElementById("rp").value;
+           var passwordRetype = document.getElementById("rrp").value;
+
+        console.log("fgh")
+           if (fname == ""){
+               alert("frst name required.");
+               return ;
+           }
+           else if (fname == ""){
+               alert("last name required.");
+               return ;
+           }
+
+            else if(phone = ""){
+                alert("Phone number required")
+            }
+            else if (email == ""){
+                alert("Email required.");
+                return ;
+            }
+
+            else if (password == ""){
+                alert("Password required.");
+                return ;
+            }
+            else if (passwordRetype == ""){
+                alert("Password required.");
+                return ;
+            }
+            else if ( password != passwordRetype ){
+                alert("Password don't match retype your Password.");
+                return;
+            }
+            else if(emailArray.indexOf(email) == -1){
+                emailArray.push(email);
+                passwordArray.push(password);
+
+                alert(email + "  Thanks for registration. \nTry to login Now");
+
+                document.getElementById("re").value ="";
+                document.getElementById("rp").value="";
+                document.getElementById("rrp").value="";
+            }
+            else{
+                alert(email + " is already register.");
+                return ;
+            }
+        }
+</script>
+
+</html>

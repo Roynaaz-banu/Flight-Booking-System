@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<body background="C:\Users\home\Desktop\New folder"> <br>  
+<body style="background-color:lightblue">
+     <meta charset = "utf-8">
+     <meta name = "viewport" content="width=device-width, initial-scale=1">
+     <title> Flight booking System </title>
+     <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+<form>
+<fieldset>
+<user> Flight Booking System </user>
+</fieldset>
+</form>
+<div id= "flights-container"></div>
+<script src = "js/require.js" data-main="js/app"></script>
+</body>
+</html>
+<div>
+    <label>Hops:</label>
+    <div id="hops">
+        <label for="hops-any">Any</label>
+        <input type="radio" name="hops" id="hops-any" value="" checked>
+        <label for="hops-nonstop">Nonstop Only</label>
+        <input type="radio" name="hops" id="hops-nonstop" value="NONSTOP">
+    </div>
+</div>
+<div>
+    <label for="order-by">Order By:</label>
+    <select id="order-by">
+        <option value="0">Arrival Time</option>
+        <option value="1">Departure Time</option>
+        <option value="2">Duration</option>
+    </select>
+</div>
+<div>
+    <label for="from-airport">From:</label>
+    <input id="from-airport" autocorrect="off">
+</div>
+<div>
+    <label for="to-airport">To:</label>
+    <input id="to-airport" autocorrect="off">
+</div>
+<div>
+    <label for="date">Date:</label>
+    <input id="date">
+</div>
+<div>
+    <label for="results">Max # of Results:</label>
+    <input id="results" value="10" min="10" max="100" step="10">
+</div>
+<input type="date" id="date">
+<input type="number" id="results" value="10" min="10" max="100" step="10">
+<br>
+

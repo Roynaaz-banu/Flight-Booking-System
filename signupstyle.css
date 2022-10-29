@@ -1,0 +1,193 @@
+
+    * {
+      padding: 0;
+      margin: 0;
+      /*box-size:border-box;*/
+    }
+
+    body {
+      background-image: url("flight.jpg");
+      font-family: verdana;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .logo{
+        width: 100%;
+        position: absolute;
+        
+        top: 0;
+        
+        
+        
+    }
+    
+    
+    .logo img{
+        display: block;
+        
+        align-items: left;
+        margin-left: 50px;
+    }
+    .nav{
+        position: relative;
+        display: flex;
+        z-index: 9;
+        margin: 5px;
+        margin-right: 10px;
+        padding: 10px;
+        padding-left: 50px;
+        padding-right: 30px;
+        overflow-x: hidden;
+        
+        box-shadow: 0px 3px 65px 0px grey;
+    }
+    .logo.h3{
+        
+        text-align: center;
+        font-family: 'Brush Script MT', cursive;
+
+    }
+    .nav_side{
+        width: 100%;
+        display: flex;
+        margin-top: 80px;
+        text-align: right;
+        float: left;
+        align-items: right;
+    }	
+    .nav_side a{
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        margin-right: 60px;
+        margin-top: 30px;
+        color: #996633;
+        font-family: URW Chancery L, cursive;
+        font-weight: bold;
+        font-size:20px;
+        float: left;
+        align-items: right;
+        text-align: right;
+    }	
+    .nav_side a:hover{
+        color: #660066;
+        transition: all 0.3s ease;
+    }
+    .register-form form {
+      
+      max-width: 400px;
+      margin: auto;
+      /* margin-top: 2px; */
+      padding: 40px 60px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      box-shadow: 0px 2px 10px rgb(131, 130, 130);
+    }
+
+    #container {
+      width: 300px;
+      margin: auto;
+      margin-bottom: 230px;
+    }
+
+    .tabs {
+      display: table-cell;
+      width: 40%;
+      background-color: rgba(11, 177, 224, 0.82);
+      padding: 10px;
+      float: left;
+      text-align: center;
+      vertical-align: middle;
+      border: 2px solid #ffffff;
+      border-bottom: 0px;
+      position: relative;
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+    .tabs:hover,
+    p {
+      cursor: pointer;
+    }
+
+    #lt {
+      background-color: rgb(12, 132, 189);
+    }
+
+   /* #cont {
+      width: 100%;
+      opacity: 1;
+      height: 300px;
+      background-color: #ffff;
+      border: 2px solid #ffffff;
+    }*/
+
+    input {
+      display: block;
+      width: 260px;
+      margin: 10px 1px;
+      padding: 10px;
+      color: black;
+      outline: 2px solid #ffffff;
+    }
+
+    input:focus {
+      background: #00FEF4;
+      outline: 2px solid #ffffff;
+      color: #000;
+      border: 2px solid transparent;
+    }
+
+    .submit {
+      width: 283px;
+      color: #6e6e6e;
+      margin: 10px 1px;
+      padding: 10px 12px;
+    }
+
+
+
+    #clear {
+      clear: both;
+    }
+
+    .comm {
+      position: absolute;
+      visibility: hidden;
+    }
+
+    #login {
+      visibility: visible;
+    }
+
+    h3 {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 10px 0px;
+      font-size: 1.5em;
+      color: #000;
+    }
+
+
+    #forgot h3 {
+      display: block;
+      font-size: 15px;
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    #forgot div {
+      margin-top: 30px;
+    }
+
+    p {
+      padding: 10px 0px;
+      font-size: 14px;
+      color: #000;
+    }
+
+    p:hover {
+      text-decoration: underline;
+    }
